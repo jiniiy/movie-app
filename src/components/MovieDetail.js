@@ -16,17 +16,10 @@ function MovieDetail({
   return (
     <div>
       <img src={background_image} alt={title_long} />
-      <h2>
-        <Link to={`/movie/${id}`}>{title_long}</Link>
-      </h2>
+      <h2>{title_long}</h2>
       <p>{description_intro}</p>
       <p>{description_full}</p>
       <ul>
-        {/* <li>
-          {genres.map((g) => (
-            <li key={g}>{g}</li>
-          ))}
-        </li> */}
         <li>rating:{rating}</li>
         <li>{runtime}minutes</li>
       </ul>
